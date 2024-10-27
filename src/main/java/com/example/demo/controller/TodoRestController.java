@@ -32,14 +32,6 @@ public class TodoRestController {
      * @return
      */
 
-
-    @GetMapping("/api/v1/user")
-    public String getUserEmpNo() {
-        
-        String empNo = "82107492"; 
-        return empNo;
-    }
-    
     @GetMapping
     public ResponseEntity<?> getTodoItemList(@PageableDefault(size = 5) Pageable pageable, @PathVariable(name = "id", required = false) Long id, @PathVariable(name = "keyword", required = false) String keyword) {
 
