@@ -10,4 +10,11 @@ public class TodoController {
     public String home() {
         return "todoList";
     }
+    
+    @GetMapping("/api/v1/user")
+    public String getUserEmpNo() {
+        
+        String empNo = "82107492"; 
+        return empNo;
+    }
 }
